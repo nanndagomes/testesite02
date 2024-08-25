@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="img.ico" type="image/x-icon">
+    <title>Efeito Turbo!</title>
+</head>
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <img src="foto header.png" alt="logo da empresa" class="logo1">
+            <h1>COMPRE SEM <br> RECEITA!</h1>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <nav>
+            <a href="https://api.whatsapp.com/send?phone=11984613582"><strong class="botaomenu">fale conosco!</strong></a>
+            <a href="2pag.html" target="_blank"><strong class="botaomenu">Dúvidas</strong></a>
+        </nav>
+
+        <p id="txt1">Adquira já nosso <strong>produto milagroso</strong> e tenha uma <strong>experiência e potência sexual</strong> que você jamais viu, surpreenda sua parceira!</p>
+        
+        <div id="botaocomprar">
+            <p><a href="#">Compre agora!</a></p>
+        </div>
+    
+    <div class="quadrados-container">
+        <div class="quadrado" id="q1">
+        <p><a href="pag3unid.html">1 uni. 69,99</a></p>
+        </div>
+        <div class="quadrado" id="q2">
+        <p><a href="">2 uni. 139,99</a></p>
+        </div>
+        <div class="quadrado" id="q3">
+        <p><a href="">3 uni. 209,99</a></p>
+    </div>
+
+    </div>
+    <div class="quadrados-container">
+      <div class="quadrado" id="q4">
+      <p><a href="">4 uni. 251,99</a></p>
+      </div>
+      <div class="quadrado" id="q5">
+      <p><a href="">5 uni. 314,99</a></p>
+      </div>
+      <div class="quadrado" id="q6">
+      <p><a href="">6 uni. 377,99</a></p>
+    </div>
+    </div>
+    <section>
+
+        <p id="txt01">Se você reside em <strong>São Paulo</strong>, receba seu pedido em até 30 minutos! oferecemos atendimento 24hrs <strong> com dezenas de motoboys </strong> prontos pra realizar sua entrega <strong> de forma rapida, segura e discreta!</strong></strong>.</p>
+    </section>
+
+    <aside>
+
+        <div id="botaocomprar">
+            <p><a href="#">Compre Agora!</a></p>
+        </div>
+
+        <h3 id="atendimento">Atendimento disponivel 24hrs!</h3>
+
+        <h3 id="ultimotitulo"> Outros Links</h3>
+
+        <div class="links">
+
+            <P><a href="2pag.html">dúvidas comuns</a></P>
+            <p ><a href="#">Sobre a SR Serviços</a></p>
+            
+        </div>
+
+    </aside>
+    </main>
+
+    <div class="whatsapp-button">
+        <a href="https://api.whatsapp.com/send?phone=11984613582">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        </div>
+
+        <div class="whatsapp-message" id="whatsapp-message">
+        <a href="https://api.whatsapp.com/send?phone=11984613582" target="_blank">
+        <p>Fale conosco!</p>
+        </a>
+
+    </div>
+
+    <footer>
+        <p id="rodape">Copyright © 2023 SR Serviços | Todos os direitos reservados. </p>
+    </footer>
+
+    <script>
+        var button = document.querySelector('.whatsapp-button');
+        var message = document.querySelector('.whatsapp-message');
+    
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        var messageVisible = false;
+    
+        button.addEventListener('mouseenter', function () {
+            message.style.display = 'block';
+        });
+    
+        button.addEventListener('mouseleave', function () {
+            if (!messageContainsMouse()) {
+                message.style.display = 'none';
+            }
+        });
+    
+        message.addEventListener('mouseenter', function () {
+            messageVisible = true;
+        });
+    
+        message.addEventListener('mouseleave', function () {
+            messageVisible = false;
+            message.style.display = 'none';
+        });
+    
+        setInterval(function () {
+            if (!isMobile && (button.matches(':hover') || messageContainsMouse())) {
+                message.style.display = 'block';
+                messageVisible = true;
+            } else if (!messageVisible) {
+                message.style.display = 'none';
+            }
+        }, 100); // Verifica a cada segundo (ajuste conforme necessário)
+    
+        function messageContainsMouse() {
+            var rect = message.getBoundingClientRect();
+            var mouseX = event.clientX;
+            var mouseY = event.clientY;
+    
+            return (
+                mouseX >= rect.left &&
+                mouseX <= rect.right &&
+                mouseY >= rect.top &&
+                mouseY <= rect.bottom
+            );
+        }
+    </script>
+    
+    
+</body>
+</html

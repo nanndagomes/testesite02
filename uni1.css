@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to top, #0076e4c0, #0076e4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 180px; 
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 0; 
+}
+
+.frase1 {
+
+    background-color: #0076e4;
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Deixar o texto em negrito */
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    background-color:#ffffff;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Ajusta o espaço entre o cabeçalho e a imagem */
+    padding-top: 0px; /* Ajusta o espaço interno superior */
+    margin-top: 0; 
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre a imagem e o texto */
+}
+
+.uni01 {
+    width: 150px; /* Tamanho fixo para a imagem */
+    height: auto; /* Manter a proporção da imagem */
+    border: 2px solid #0076e4;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.frase {
+    font-size: 18px; /* Tamanho da fonte ajustável */
+    color: #242627; /* Cor do texto */
+    font-weight: bold; /* Letras mais grossas */
+    text-align: center;
+}
+strong {
+
+    color: #0076e4;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.logo1 {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+#botaocomprar {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-top: 4px;
+    background-color: #3D97E8;
+    width: 240px;
+    height: 43px;
+    border-radius: 8px;
+}
+
+#botaocomprar p{
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#botaocomprar a {
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#atendimento {
+
+    font-size: 18px;
+    color: #242627;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#ultimotitulo {
+
+    font-size: 17px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px ;
+}
+
+
+.links {
+
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.links a {
+
+    text-decoration: none;
+    color: #242627;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+footer {
+    background-image: linear-gradient(to top, #0076e4c0, #0076e4c0);
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#rodape {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+

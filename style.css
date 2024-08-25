@@ -1,0 +1,349 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to
+    top, #0076e4c0, rgb(0, 118, 228));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 180px; 
+    max-width: 800px;
+    margin: auto;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    }
+
+
+.logo1 {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+h1{
+    color: #ffffff;
+    text-align: center;
+    margin-left: -5%; /* Ajuste conforme necessário */
+    font-size: 18px; /* Tamanho de fonte ajustado */
+    line-height: 1.2;
+    margin-left: 30px;
+}
+
+strong {
+
+    color: #0074e4;
+}
+
+main {
+    max-width: 800px;
+    background-color: #f6faf3;
+    margin: auto;
+}
+
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    
+}
+
+nav > a {
+
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px; /* Você tem duas declarações de padding, vamos manter apenas esta */
+    display: inline-block;
+    font-size: 14px; 
+    background-color: #0076e4c0;
+    border-radius: 10px;
+    margin: 0 5px; /* Ajuste a margem para diminuir o espaço entre os botões e outros elementos */
+    
+}
+
+nav a:hover {
+    background-color: rgb(175, 166, 166);
+    color: #ffffff;
+}
+
+
+#txt1 {
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px 0;
+    margin-top: -10px; /* Adicionado margem para separar do conteúdo acima */
+}
+
+.quadrados-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 14px;
+}
+
+.quadrado {
+    width: calc(33.33% - 12px);
+    margin: 10px 5px; /* Espaçamento ao redor dos quadrados */
+    height: auto; /* Altura automática para conteúdo interno */
+    border: 2px solid #0076e4c0;
+    border-radius: 5px;
+    background-color: lightgrey;
+    text-align: center;
+    position: relative;
+}
+
+.quadrado::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.quadrado img {
+    width: 100%;
+}
+
+.quadrado p {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9); /* Adicionar fundo para melhorar a legibilidade */
+    padding: 5px; /* Aumentar o padding para dar mais espaço ao redor do texto */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    background: rgba(255, 255, 255, 0.8);
+    color: #0074e4;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#q1 {
+    background-image: url('pramil-sildenafil-50-mg-com-20-comprimidos-pramil-sildenafil-2-opcao-Copia-_2_.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+}
+
+#q2 {
+    background-image: url('2-cartelas.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+}
+
+#q3 {
+    background-image: url('3\ cartelas.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    
+}
+
+#q4 {
+    background-image: url('4\ cartelas.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+}
+
+#q5 {
+    background-image: url('5\ cartelas.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; 
+    background-position: center center; 
+}
+
+#q6 {
+    background-image: url('5\ cartelas.jpg');
+    background-size: cover; /* Ajusta o tamanho para cobrir a div */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem */
+    
+}
+
+#txt01{
+
+    text-align: center;
+    font-size: 16px;
+    text-indent: 15px;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 20px;
+}
+
+.botaomenu {
+
+    color: #fffdfd;
+    margin-left: 10px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+@media screen and (max-width: 700px) {
+    .botaomenu {
+        /* Ajustes para reduzir o tamanho do texto e garantir que o botão não sobreponha o texto */
+        font-size: 17px; /* Reduz o tamanho da fonte para telas menores */
+        padding: 15px; /* Reduz o padding dentro do botão */
+        margin: 5px;
+    
+    }
+}
+
+nav > a {
+    width: auto; /* Cada botão só será tão largo quanto o seu conteúdo */
+    margin: 20px 0; /* Adiciona espaço vertical entre os botões */
+}
+
+
+#botaocomprar {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 7px;
+    padding-top: 4px;
+    background-color: #3D97E8;
+    width: 240px;
+    height: 43px;
+    border-radius: 8px;
+}
+
+#botaocomprar p{
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#botaocomprar a {
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#atendimento {
+
+    font-size: 18px;
+    color: #0074e4;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#ultimotitulo {
+
+    font-size: 17px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px ;
+}
+
+.links {
+
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.links a {
+
+    text-decoration: none;
+    color: black;
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 80px;
+    left: 20px;
+    z-index: 1000;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.whatsapp-button a {
+    display: block;
+    background-color: #1ed233;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-message {
+    display: none;
+    position: fixed;
+    bottom: 90px; 
+    left: calc(20px + 60px + 10px);
+    z-index: 1001;
+    background-color: white;
+    padding: 0 10px; 
+    padding-bottom: 5px;
+    border: 1px solid #1ed233;
+    border-radius: 5px;
+    white-space: nowrap;
+    line-height: 1; 
+    display: flex; 
+    align-items: center;
+}
+
+.whatsapp-message a {
+    display: block;
+    text-decoration: none;
+    color: #1ed233;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer {
+    background-image: linear-gradient(to top, #0076e4c0, #0076e4c0);
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#rodape {
+    text-align: center;
+    font-weight: 500;
+}

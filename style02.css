@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+
+    max-width: 800px;
+    margin: auto;
+    height: 140px;
+    background-color: #2087E7;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 30px;
+    font-size: 24px;
+}
+
+main{
+
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-indent: 10px;
+
+}
+
+h2{
+
+    text-align: left;
+    padding-top: 15px;
+    margin-left: 20px;
+    font-size: 21px;
+    color:#0076e4 ;
+}
+
+.botaopag02 {
+
+    text-align: center;
+    background-color: #0076e4;
+    height: 45px;
+    width: 260px;
+    margin: auto;
+    border-radius: 7px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    
+}
+
+.botaopag02 a {
+
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+footer {
+    background-color:  #0076e4;
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#rodape {
+    text-align: center;
+    font-weight: 500;
+}
